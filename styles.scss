@@ -1,0 +1,101 @@
+:root {
+  --color-primary: #f38181;
+  --color-secondary: #fce38a;
+  --color-tertiary: #eaffd0;
+  --color-blue: #95e1d3;
+}
+.dark-theme {
+  --color-primary: #95e1d3;
+  --color-secondary: #eaffd0;
+  --color-tertiary: #f38181;
+  --color-blue: #fce38a;
+}
+body {
+  background-color: var(--color-blue);
+}
+
+.theme {
+  i {
+    color: var(--color-secondary);
+  }
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  width: 60px;
+  height: 20px;
+  font-size: 3rem;
+}
+.calcContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  margin: auto;
+
+  .calculator {
+    background-color: var(--color-tertiary);
+    width: 24%;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+
+    .screen {
+      background-color: var(--color-secondary);
+      border-radius: 5px;
+      width: 100%;
+      height: 120px;
+      font-family: "Orbitron", sans-serif;
+      color: #4de898;
+      .output-1 {
+        background-color: inherit;
+        opacity: 0.4;
+        padding-right: 5px;
+        font-size: 20px;
+        overflow: hidden;
+        text-align: right;
+      }
+      .output-2 {
+        background-color: inherit;
+        padding: 0 10px;
+        font-size: 2rem;
+        font-family: "Orbitron", sans-serif;
+        text-align: right;
+      }
+    }
+
+    .keyContainer {
+      padding-top: 50px;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--color-tertiary);
+
+      .row {
+        background-color: var(--color-tertiary);
+        .zero {
+          width: 135px;
+        }
+
+        button {
+          background-color: var(--color-primary);
+          margin: 0px 5px 25px;
+          height: 40px;
+          width: 60px;
+          border-radius: 5px;
+          font-family: "Orbitron", sans-serif;
+          font-size: 1rem;
+          text-align: center;
+          color: var(--color-tertiary);
+        }
+      }
+    }
+  }
+}

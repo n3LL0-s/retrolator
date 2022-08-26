@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="theme-btn theme">
+        <i onclick="changeIcon(this)" class="fa-solid fa-toggle-on"></i>
+    </div>
+    <div class="calcContainer">
+      <div class="calculator">
+        <div class="screen">
+          <p class="output-1">0</p>
+          <p class="output-2">0.</p>
+        </div>
+        <div class="keyContainer">
+          <div class="row 1">
+            <button class="btn btn-clear">C</button>
+            <button class="btn btn-off">CE</button>
+            <button class="btn operation">%</button>
+            <button class="btn operation">*</button>
+          </div>
+          <div class="row 2">
+            <button class="btn num">7</button>
+            <button class="btn num">8</button>
+            <button class="btn num">9</button>
+            <button class="btn operation">/</button>
+          </div>
+          <div class="row 3">
+            <button class="btn num">4</button>
+            <button class="btn num">5</button>
+            <button class="btn num">6</button>
+            <button class="btn operation">+</button>
+          </div>
+          <div class="row 4">
+            <button class="btn num">1</button>
+            <button class="btn num">2</button>
+            <button class="btn num">3</button>
+            <button class="btn operation">-</button>
+          </div>
+          <div class="row 5">
+            <button class="btn num zero">0</button>
+            <button class="btn num dot">.</button>
+            <button class="btn btn-equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
