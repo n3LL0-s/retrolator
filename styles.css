@@ -63,6 +63,8 @@ body {
   font-size: 20px;
   overflow: hidden;
   text-align: right;
+  height: 20px;
+  contain: content;
 }
 .calcContainer .calculator .screen .output-2 {
   background-color: inherit;
@@ -70,6 +72,8 @@ body {
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
   text-align: right;
+  height: 35px;
+  contain: content;
 }
 .calcContainer .calculator .keyContainer {
   padding-top: 50px;
